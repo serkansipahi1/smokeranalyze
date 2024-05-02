@@ -12,6 +12,8 @@ print("Number of samples: ", len(dataset))
 df_sorted_heart_rate = dataset.sort_values(by='heart_rate')
 dataset = drop_outliers(df_sorted_heart_rate, 'heart_rate')
 
+print(dataset)
+
 df_sorted_chol = dataset.sort_values(by='chol')
 dataset = drop_outliers(df_sorted_chol, 'chol')
 
